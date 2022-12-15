@@ -1,13 +1,14 @@
+import { Link } from "react-router-dom";
 import useMovieDetails from "../../Hooks/useMovieDetails";
 import styles from "./.module.css";
 const MoviedDetails = () => {
   const { movieData, img_path } = useMovieDetails();
   return (
     <>
-      <div className="text-center container ">
+      <div className="text-center container my-3 ">
         <h4
           className={`${styles.borderTitle}
-          text-white py-4 fs-3 
+          text-white pb-4 fs-3 
           w-75 mb-5 m-auto`}
         >
           {movieData?.title}
@@ -48,6 +49,12 @@ const MoviedDetails = () => {
             <p>{movieData?.overview}</p>
           </h5>
         </div>
+        <Link
+              className="btn btn-primary btn-block px-2 fs-6 text-capitalize"
+              to={'/'}
+        >
+          Back To Home
+            </Link>
       </div>
     </>
   );
