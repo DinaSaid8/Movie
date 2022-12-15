@@ -1,0 +1,13 @@
+.borderTitle{
+    max-width: 450px;
+    border-bottom: 1px solid var(--blue-color);
+
+}
+.imgHeight{
+    max-width: 450px;
+    max-height: 450px;
+}
+.content{
+    line-height: 1.9em;
+}
+

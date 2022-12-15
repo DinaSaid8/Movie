@@ -1,0 +1,8 @@
+.footerBg{
+    background-color: var(--primary-color)
+}
+@media (max-width:900px){
+    .footerBg{
+        background-color: var(--secondary-color);
+    }
+}

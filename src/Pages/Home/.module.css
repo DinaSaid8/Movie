@@ -1,0 +1,22 @@
+.header{
+    background-color:var(--primary-color);
+     min-height: 70px; 
+     width: 100%; 
+     position: sticky;
+     top: 0;
+     z-index: 9;
+   
+}
+.container{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+@media (max-width:900px){
+    .header{
+        display: flex;
+        align-items: center;
+        background-color: var(--secondary-color);
+    }
+}
